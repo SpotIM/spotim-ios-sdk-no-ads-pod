@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
 # the Pre-Compiled Framework:
-  s.source          = { :http => 'https://github.com/SpotIM/spotim-ios-sdk-no-ads-pod/blob/master/Framework/SpotImNoAds.framework.zip?raw=true' }
+  s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-no-ads-pod.git', :tag => s.version.to_s }
   s.ios.vendored_frameworks = 'SpotImNoAds.framework'
   s.dependency 'Alamofire', '~> 4.8'
   s.dependency 'PromiseKit', '~> 6.8'
