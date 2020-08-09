@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-no-ads-pod.git', :tag => s.version.to_s }
   s.ios.vendored_frameworks = 'SpotImNoAds.framework'
-  s.dependency 'Alamofire', '~> 4.8'
+  s.dependency 'Alamofire', '~> 5.2'
   s.dependency 'PromiseKit', '~> 6.8'
 
 end
