@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpotImNoAds'
-  s.version          = '1.0.10'
+  s.version          = '1.0.11'
   s.swift_versions = ['5.0']
   s.summary          = 'Spot.IM SDK'
   s.description      = 'This SDK allows you to integrate SpotIM into your iOS app.'
@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.author          = { 'Itay Dressler' => 'itay.d@spot.im' }
   s.platform        = :ios
   s.ios.deployment_target = '10.3'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 # the Pre-Compiled Framework:
   s.source          = { :git => 'https://github.com/SpotIM/spotim-ios-sdk-no-ads-pod.git', :tag => s.version.to_s }
